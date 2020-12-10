@@ -1,4 +1,5 @@
 /*
+ * Copyright (C) 2020 Muntashir Al-Islam
  * Copyright (C) 2018 The Android Open Source Project
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -15,9 +16,6 @@
  */
 
 package com.android.apksig.internal.apk.v3;
-
-import static com.android.apksig.internal.apk.ApkSigningBlockUtils.getLengthPrefixedSlice;
-import static com.android.apksig.internal.apk.ApkSigningBlockUtils.readLengthPrefixedByteArray;
 
 import com.android.apksig.ApkVerifier.Issue;
 import com.android.apksig.SigningCertificateLineage;
@@ -57,6 +55,9 @@ import java.util.List;
 import java.util.Set;
 import java.util.SortedMap;
 import java.util.TreeMap;
+
+import static com.android.apksig.internal.apk.ApkSigningBlockUtils.getLengthPrefixedSlice;
+import static com.android.apksig.internal.apk.ApkSigningBlockUtils.readLengthPrefixedByteArray;
 
 /**
  * APK Signature Scheme v3 verifier.
